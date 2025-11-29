@@ -17,6 +17,11 @@ main {
     padding: 20px;
 }
 
+a:link, a:visited {
+    text-decoration:solid;
+    color: coral;
+}
+
 h1, h2 {
     color: rgb(140, 76, 8);
 }

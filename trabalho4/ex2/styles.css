@@ -1,0 +1,134 @@
+
+
+body {
+    background-color: #ddd;
+    font-family: Helvetica;
+    color: #444;
+
+    width: 80%;
+    margin: 0 auto;
+    padding: 2% 0;
+}
+
+main {
+    width: 50%;
+    margin: 0 auto;
+
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    
+}
+
+h1 {
+    color: rgb(140, 76, 8);
+}
+
+
+legend {
+    font-weight: bold;
+    color: rgb(140, 76, 8);
+    padding: 0 8px;
+    font-size: 1.1rem;
+}
+
+#id-cadastro {
+    font-family: monospace;
+}
+
+.label-foto {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: rgb(140, 76, 8);
+    font-size: 1rem;
+}
+
+input {
+    padding: 5px 0px;
+    border: none;
+    border-bottom: 1px solid;
+    margin: 5px;
+}
+
+input[required] {
+    background-color: #fff8e1;
+}
+
+input::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+
+input:is([type="text"], [type="email"], [type="tel"]):invalid {
+    border-color: red;
+    background-color: rgba(255, 0, 0, 0.02);
+}
+
+input:is([type="text"], [type="email"], [type="tel"]):valid {
+    background-color: rgba(0, 255, 0, 0.05);
+}
+
+input:is([type="text"], [type="email"], [type="tel"]):invalid + span::after {
+    color: red;
+    content: "✖";
+}
+input:is([type="text"], [type="email"], [type="tel"]):valid + span::after {
+    content: "✓";
+    color: greenyellow;
+}
+
+select {
+  padding: 5px;
+  color: #444;
+  border-radius: 6px;
+}
+
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 6px;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px 25px;
+    margin-bottom: 25px;
+    background-color: #ffffff
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+}
+
+fieldset > fieldset {
+    padding: 0;
+    margin-bottom: 25px;
+    border: none;
+}
+
+button {
+    text-align: center;
+    background-color: rgb(140, 76, 8);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(120, 65, 7);
+}
