@@ -1,0 +1,39 @@
+
+
+body {
+    background-color: #ddd;
+    font-family: Helvetica;
+    line-height: 1.5;
+    color: #444;
+
+    width: 60%;
+    margin: 0 auto;
+    padding: 2% 0;
+}
+
+main {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: rgb(140, 76, 8);
+}
+
+section {
+    margin-top: 0px;
+    padding-bottom: 5px;
+    border-top: solid 1px;
+}
+
+
+/* Regra: o primeiro parágrafo <p> depois de um elemento <h1> possui um recuo maior*/
+section > h2 + p {
+    text-indent: 2rem;
+}
+
+
+.experiencia li {
+    font-weight: bold;
+}
