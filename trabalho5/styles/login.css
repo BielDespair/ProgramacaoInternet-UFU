@@ -1,0 +1,44 @@
+
+
+body {
+    background-color: #ddd;
+    align-items: center;
+
+    font-family: Helvetica;
+    font-size: 1.5rem;
+
+}
+main {
+    max-width: 300px;
+    padding: 50px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 0 auto;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    box-shadow: 0px 0px 5px 2px gray;
+}
+
+label {
+    color: #5f5a55;
+}
+button,
+input {
+    box-sizing: border-box;
+    margin: 5px 0px 25px 0px;
+    width: 100%;
+    border: 2px solid;
+    border-color: #dadada;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+input:focus {
+    box-shadow: 0px 0px 5px 2px gray;
+    outline: none;
+}
+
