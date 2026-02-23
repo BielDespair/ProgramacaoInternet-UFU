@@ -1,0 +1,29 @@
+
+
+body {
+    align-items: center;
+    font-size: larger;
+    background-color: #dddddd;
+}
+main {
+    margin: 0 auto;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+
+li {
+    background-color: #bdd9f0;;
+    padding: 10px;
+    margin: 5px;
+}
+
+
+.destaca {
+    box-shadow: 0 0 20px red;
+}

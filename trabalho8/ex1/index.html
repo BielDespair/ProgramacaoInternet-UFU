@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 1</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <main>
+        
+        <div>
+            <label for="interesse">Interesse: </label>
+            <input type="text" name="interesse" id="interesse">
+            <button id="adicionar">Adicionar</button>
+        </div>
+
+        <div>
+            <ol id="listaInteresses">
+
+            </ol>
+        </div>
+
+        <script>
+            function handleClick() {
+                // Busca o campo de input
+                const input = document.getElementById("interesse");
+                // Pega o texto do botão
+                const text = input.value;
+
+                // Busca a ol
+                const listaInteresses = document.getElementById("listaInteresses");
+                // Cria um novo li
+                const novoLi = document.createElement("li");
+                // Setta o texto do novo li para o texto do botão
+                novoLi.textContent = text;
+                // Adiciona o elemento no DOM
+                listaInteresses.appendChild(novoLi);
+            }
+
+            const btnAdicionar = document.getElementById("adicionar");
+            btnAdicionar.addEventListener("click", handleClick);
+            
+        </script>
+    </main>
+
+
+</body>
+
+</html>

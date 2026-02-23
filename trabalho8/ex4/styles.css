@@ -1,0 +1,49 @@
+
+body {
+    background-color: #ddd;
+    font-size: 1.2rem;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+main {
+    max-width: 500px;
+    padding: 40px 30px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 50px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #5f5a55;
+}
+
+
+input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    border: 2px solid #dadada;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+form div {
+    margin-bottom: 15px;
+}
+
+
+form div span {
+    display: block;
+    height: 1.5em;
+    color: red;
+    margin-top: 2px;
+}
