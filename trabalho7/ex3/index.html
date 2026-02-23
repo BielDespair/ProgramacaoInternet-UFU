@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Peso Ideal</title>
+</head>
+
+<body>
+
+    <main>
+        <label for="altura">Altura (cm):</label>
+        <input type="text" id="altura" />
+
+        <label>Sexo:</label>
+        <input type="radio" name="sexo" id="masculino" value="masculino">
+        <label for="masculino">Masculino</label>
+
+        <input type="radio" name="sexo" id="feminino" value="feminino">
+        <label for="feminino">Feminino</label>
+
+        <button id="calcular">Calcular</button>
+
+        <h2 id="resultado"></h2>
+
+        <script>
+            const botaoCalcular = document.getElementById("calcular");;
+            botaoCalcular.addEventListener("click", function () {
+                let campoAltura = document.querySelector("#altura");
+                let altura = parseInt(campoAltura.value);
+
+                let sexoMasculino = document.querySelector("#masculino").checked;
+                let sexoFeminino = document.querySelector("#feminino").checked;
+
+                if (isNaN(altura) || (!sexoMasculino && !sexoFeminino)) {
+                    const resultado = document.getElementById("resultado")
+                    resultado.textContent = "Preencha altura e selecione o sexo.";
+                    return;
+                }
+
+                let pesoIdeal;
+                if (sexoMasculino) {
+                    pesoIdeal = 52 + 0.75 * (altura - 152.4);
+                } else {
+                    pesoIdeal = 52 + 0.67 * (altura - 152.4);
+                }
+                pesoIdeal = Math.round(pesoIdeal * 100) / 100;
+                document.getElementById("resultado").textContent = "Peso Ideal: " + pesoIdeal + " kg";
+            });
+        </script>
+    </main>
+
+
+</body>
+
+</html>
