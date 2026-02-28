@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance e Estratégia | Consultoria</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <div class="profile-img-container">
+                <img src="./images/image.png" alt="Foto do Profissional" class="profile-img">
+            </div>
+            <h1>Performance. Estratégia. Evolução.</h1>
+            <p>Consultoria física e digital para quem busca resultado real.</p>
+            
+            <div class="btn-group">
+                <a href="https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20consultoria." class="btn btn-primary" target="_blank">
+                    <i class="ph-fill ph-whatsapp-logo"></i> Falar no WhatsApp
+                </a>
+                <a href="#programas" class="btn btn-secondary" onclick="document.getElementById('programas').scrollIntoView({behavior: 'smooth'});">
+                    <i class="ph ph-arrow-down"></i> Ver Programas
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav class="tabs-container" id="programas">
+        <div class="tabs">
+            <button class="tab-btn active" onclick="openTab(event, 'treinos')">Treinos e Performance</button>
+            <button class="tab-btn" onclick="openTab(event, 'futebol')">Futebol Infantil</button>
+            <button class="tab-btn" onclick="openTab(event, 'produtos')">Produtos Digitais</button>
+            <button class="tab-btn" onclick="openTab(event, 'renda')">Renda Online</button>
+            <button class="tab-btn" onclick="openTab(event, 'mentalidade')">Mentalidade</button>
+        </div>
+    </nav>
+
+    <section class="content-section container">
+        
+        <div id="treinos" class="tab-content active">
+            <a href="#" class="card">
+                <div class="card-info">
+                    <div class="card-icon"><i class="ph ph-barbell"></i></div>
+                    <div class="card-text">
+                        <h3>Consultoria 1 a 1</h3>
+                        <p>Treinamento personalizado e acompanhamento.</p>
+                    </div>
+                </div>
+                <div class="card-action"><i class="ph ph-arrow-right"></i></div>
+            </a>
+            <a href="#" class="card">
+                <div class="card-info">
+                    <div class="card-icon"><i class="ph ph-activity"></i></div>
+                    <div class="card-text">
+                        <h3>Planilha de Hipertrofia</h3>
+                        <p>Método validado para ganho de massa.</p>
+                    </div>
+                </div>
+                <div class="card-action"><i class="ph ph-arrow-right"></i></div>
+            </a>
+        </div>
+
+        <div id="futebol" class="tab-content">
+            <a href="#" class="card">
+                <div class="card-info">
+                    <div class="card-icon"><i class="ph ph-soccer-ball"></i></div>
+                    <div class="card-text">
+                        <h3>Treinamento de Base</h3>
+                        <p>Desenvolvimento motor e tático para crianças.</p>
+                    </div>
+                </div>
+                <div class="card-action"><i class="ph ph-arrow-right"></i></div>
+            </a>
+        </div>
+
+        <div id="produtos" class="tab-content">
+            <a href="#" class="card">
+                <div class="card-info">
+                    <div class="card-icon"><i class="ph ph-book-open-text"></i></div>
+                    <div class="card-text">
+                        <h3>E-book: Emagrecimento Real</h3>
+                        <p>Estratégias práticas sem falsas promessas.</p>
+                    </div>
+                </div>
+                <div class="card-action"><i class="ph ph-arrow-right"></i></div>
+            </a>
+        </div>
+
+        <div id="renda" class="tab-content">
+            <a href="#" class="card">
+                <div class="card-info">
+                    <div class="card-icon"><i class="ph ph-chart-line-up"></i></div>
+                    <div class="card-text">
+                        <h3>Parceria Estratégica</h3>
+                        <p>Indicações e produtos de alta conversão.</p>
+                    </div>
+                </div>
+                <div class="card-action"><i class="ph ph-arrow-right"></i></div>
+            </a>
+        </div>
+
+        <div id="mentalidade" class="tab-content">
+            <a href="#" class="card">
+                <div class="card-info">
+                    <div class="card-icon"><i class="ph ph-brain"></i></div>
+                    <div class="card-text">
+                        <h3>Mentoria Disciplina Inabalável</h3>
+                        <p>Construa rotinas que geram resultados.</p>
+                    </div>
+                </div>
+                <div class="card-action"><i class="ph ph-arrow-right"></i></div>
+            </a>
+        </div>
+
+    </section>
+
+    <section class="institutional">
+        <div class="container">
+            <h2>"Disciplina constrói liberdade."</h2>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#" target="_blank" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+                <a href="#" target="_blank" aria-label="WhatsApp"><i class="ph ph-whatsapp-logo"></i></a>
+                <a href="mailto:seuemail@dominio.com" aria-label="Email"><i class="ph ph-envelope-simple"></i></a>
+            </div>
+            <div class="footer-legal">
+                <p>&copy; 2026 Seu Nome. Todos os direitos reservados.</p>
+                <p><a href="#">Política de Privacidade</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function openTab(evt, tabName) {
+            // Esconde todo o conteúdo das abas
+            var tabcontent = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+
+            // Remove a classe 'active' de todos os botões
+            var tablinks = document.getElementsByClassName("tab-btn");
+            for (var i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+
+            // Mostra a aba atual e adiciona 'active' no botão clicado
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
+
+</body>
+</html>
